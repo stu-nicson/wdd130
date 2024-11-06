@@ -71,7 +71,7 @@ nav a:hover {
     color: #d9c2a3;
 }
 
-h4{
+h4 {
     color: white;
 }
 .book, .join{
@@ -80,7 +80,7 @@ h4{
     text-decoration: none;
 }
 
-.book:hover, .join:hover{
+.book:hover, .join:hover {
     background-color: black;
     color: white;
 }
@@ -94,8 +94,10 @@ h4{
     text-align: center;
 }
 
-main section {
+main {
+    display: grid;
     text-align: center;
+    grid-template-columns: repeat(10, 1fr);
 } 
 
 .card-img {
@@ -128,34 +130,34 @@ main section {
 }
 
 .rivers-card {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-  }
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
   
 .camping-card {
-    grid-column: 5 / 7;
-    grid-row: 2 / 3;
-  }
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
   
 .rapids-card {
-    grid-column: 8 / 10;
-    grid-row: 2 / 3;
-  }
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
   
 #background {
-    grid-column: 1 / 11;
-    grid-row: 4 / 9;
-  }
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
   
 .mountains {
-    grid-column: 2 / 7;
-    grid-row: 5 / 8;
-  }
+    grid-column: 2/7;
+    grid-row: 5/8;
+}
   
 .msg {
-    grid-column: 6 / 10;
-    grid-row: 6 / 7;
-  }
+    grid-column: 6/10;
+    grid-row: 6/7;
+}
 
 #background {
     height: 725px;
