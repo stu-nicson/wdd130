@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleSubmit(event) 
+        {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            
+            alert(`First Name: ${firstName}`);
+        }
+    </script>
+    <style>
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .mainTitle {
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            font-size: 50px;
+
+        }
+        .wrapper {
+            background-color: rgb(7, 111, 48);
+            height: 6600px;
+            width: 500px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 15px solid; /* Border size */
+            border-image: repeating-linear-gradient(
+                45deg,        /* Diagonal stripes */
+                red,          /* First stripe color */
+                red 10px,     /* Width of the red stripe */
+                white 10px,   /* Start of the white stripe */
+                white 20px    /* Width of the white stripe */
+            ) 1; /* The "1" scales the gradient to fit */
+            border-radius: 15px;
+}
+    
+        
+
+        #button {
+            background-color: rgb(178, 50, 50);
+        }
+        
+        /* Style for input boxes and dropdown */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 90%; /* Adjust width */
+            padding: 10px; /* Padding for better spacing */
+            margin: 5px 0; /* Space between inputs */
+            border: 2px solid #00bcd4; /* Light blue border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Text size */
+            outline: none; /* Remove focus outline */
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition on hover/focus */
+        }
+
+        /* Focus effect */
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus {
+            border-color: #ff9800; /* Change border color */
+            box-shadow: 0 0 5px rgba(255, 152, 0, 0.5); /* Glow effect */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 90%; /* Fit larger wrapper */
+            padding: 12px; /* Bigger padding */
+            margin: 10px 0; /* Space between inputs */
+            border: 2px solid #00bcd4; /* Light blue border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 18px; /* Larger text size */
+            outline: none; /* Remove focus outline */
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition on hover/focus */
+        }
+
+        /* Style for labels */
+        label {
+            font-size: 18px; /* Larger label text */
+            color: white; /* White text for contrast */
+            margin-bottom: 5px;
+        }
+
+        #button {
+            width: 50%; /* Adjust the button width */
+            padding: 12px 20px; /* Enlarge the padding */
+            background-color: #b23232; /* Keep the red color */
+            color: white; /* White text for better contrast */
+            font-size: 18px; /* Larger font size */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Change cursor to pointer */
+            text-align: center; /* Center text inside button */
+            transition: all 0.3s ease-in-out; /* Smooth hover effect */
+            margin: 0 auto; /* Center button horizontally */
+            display: block; /* Block-level element to allow centering */
+        }
+
+        /* Hover effect for the button */
+        #button:hover {
+            background-color: #ff5722; /* Slightly lighter red */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="mainTitle">Contact Us</h1>
+    <div class="wrapper">
+    <form action="#" onsubmit="handleSubmit(event)">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required> <!-- keep the id and the name the same unless you want to go insane -->
+        <br><br>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+        <label>Gender: </label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="newsletter">Subscribe to my newsletter</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <br><br>
+        <label for="updates">Be informed of updates</label>
+        <input type="checkbox" id="updates" name="updates">
+        <br><br>
+
+        <label for="genre">Favorite Music Genre</label>
+        <select id="genre" name="genre">
+            <option value="">Select an Option</option>
+            <option value="Rock"> Rock and Roll</option>
+            <option value="Pop">Pop Music</option>
+            <option value="Jazz">Jazz Music</option>
+            <option value="Classical">Classical Music</option>
+        </select>
+        <br><br>
+
+        <button id="button" type="submit">Submit Form</button>
+    </form>
+    </div>
+</body>
+</html>
