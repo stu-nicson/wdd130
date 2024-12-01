@@ -15,7 +15,7 @@
   /* Text and Background Colors */
   --headline-color-on-white: #6A994E;
   --headline-color-on-color: white;
-  --paragraph-color-on-white: #6A994E;
+  --paragraph-color-on-white: #ffffff;
   --paragraph-color-on-color: white;
   --paragraph-background-color: #6A994E;
 
@@ -169,6 +169,81 @@ button:hover {
   
   .logo a:hover {
     text-decoration: none; /* No underline on hover */
+  }
+ 
+  
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Optional: adjust the height limit */
+    overflow: hidden;
+  }
+  
+  .hero-container img {
+    width: 100%;
+    height: auto;
+    display: block; /* Avoids any spacing below the image */
+  }
+  
+  .hero-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-color);
+    border: none;
+    padding: 1em 2em;
+    font-family: var(--heading-font);
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for contrast */
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: var(--accent2-color);
+  }
+
+  #about-owner {
+    display: flex;
+    flex-direction: column; /* Stack the title above the content */
+    align-items: center; /* Center-align the title */
+    gap: 1em; /* Add space between the title and content */
+  }
+  
+  #about-owner h2 {
+    text-align: center; /* Center the title */
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+  }
+  
+  #about-owner .content {
+    display: flex; /* Align text and image side by side */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center the text and image as a group */
+    gap: 2em; /* Add space between text and image */
+    width: 100%; /* Ensure it stretches across the section */
+  }
+  
+  #about-owner p {
+    flex: 1; /* Allow the paragraph to take up available space */
+    text-align: left; /* Align text to the left */
+  }
+  
+  #about-owner img {
+    max-width: 40%; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+
+  .accent-line {
+    border: none;
+    border-top: 3px solid var(--accent1-color); /* Set the border color */
+    margin: 2em 0; /* Adds space above and below the line */
+    width: 100%; /* Make sure it spans across the full width */
   }
   
 
