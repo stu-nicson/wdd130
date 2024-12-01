@@ -246,4 +246,34 @@ button:hover {
     width: 100%; /* Make sure it spans across the full width */
   }
   
-
+  #facebook-banner {
+    background-color: #3b5998; /* Facebook blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #facebook-banner h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  #facebook-banner p {
+    font-size: 16px;
+    margin: 0 0 20px;
+  }
+  
+  .facebook-button {
+    background-color: #4267B2; /* Facebook button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .facebook-button:hover {
+    background-color: #365899; /* Darker Facebook button color on hover */
+  }
