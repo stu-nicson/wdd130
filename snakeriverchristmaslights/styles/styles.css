@@ -42,7 +42,16 @@ header {
     background-color: var(--primary-color);
     color: var(--headline-color-on-color);
     padding: 1em 2em;
-  }
+
+    /*<-- Added stuff for changes could comment -->*/
+    
+    width: 100%; /* Ensure header spans full width */
+    box-sizing: border-box; /* Prevents any extra padding/margin from affecting width */
+    position: fixed; /* Fix it at the top */
+    top: 0; /* Position it at the very top */
+    left: 0; /* Ensure it's aligned to the left edge */
+    z-index: 1000; /*  Ensure it sits above other content*/
+}
   
   .logo {
     display: flex;
@@ -59,7 +68,8 @@ header {
     font-size: 1.8em; /* Adjust size */
     margin: 0;
   }
-  
+
+
   nav ul {
     display: flex;
     gap: 1em; /* Space between nav items */
@@ -117,6 +127,7 @@ footer {
     color: var(--headline-color-on-color);
     padding: 1em 2em; /* Add padding for breathing space */
     font-family: var(--heading-font);
+    width: 100%; /* Ensure header spans full width */
   }
   
   footer p {

@@ -25,6 +25,50 @@
             width: 300px;
             border: 10px solid darkgray
         }
+
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        .middle a {
+            text-decoration: none;
+        }
         
     </style>
      </head>
@@ -34,8 +78,8 @@
              <a href="wwr/index.html">White Water Rafting Website</a>
              <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
              <a href="positioning.html">Positioning Activity</a>
-             <a href="#">Personal Website</a>
-             <a href="#">Personal Siteplan</a>
+             <a href="snakeriverchristmaslights/index.html">Personal Website</a>
+             <a href="snakeriverchristmaslights/site-plan.html">Personal Siteplan</a>
          </nav>    
      
          <p>Hello! I am a Cyber Security Major with a Computer Programming Minor. 
@@ -47,11 +91,16 @@
             One of my favorite scriptures is Alma 37:6.
          </p>
 
-         <p>This is a test. I will try to commit this change to github.
-         </p>
-
-         <p>This is a second test. I will try to commit this change to github.
-        </p>
+         <h2>Christmas Lights!!!!!</h2>
+        <p>Hover over the image to visit my personal page</p>
+         <div class="container">
+            <img src="heroimage.jpeg" alt="Christmaslights" class="image" style="width:100%">
+            <div class="middle">
+            <a href="snakeriverchristmaslights/index.html">
+              <div class="text">Christmas Lights</div>
+            </a>
+            </div>
+          </div>
 
          <img id="profile" src="images/myphoto.jpeg" alt="Image of me" class ="center">
      </body>
