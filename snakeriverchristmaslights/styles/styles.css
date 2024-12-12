@@ -321,3 +321,11 @@ button:hover {
     border-radius: 8px; /* Optional: Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow */
   }
+
+  .gallery-wrapper {
+    border: 8px solid #BC4749;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
