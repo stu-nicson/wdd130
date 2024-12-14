@@ -404,3 +404,81 @@ input[type="text"]:focus {
 .hero-button:hover {
   background-color: var(--accent2-color);
 }
+
+
+/* Ensure good padding and content on small screens */
+@media (max-width: 768px) {
+  body {
+    padding: 1em;
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 0.5em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+
+  .logoimage {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 1.5em;
+  }
+
+  .hero-button {
+    font-size: 1.5em;
+    padding: 1em;
+  }
+
+  .gallery-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* For very large screens (e.g., tablets and desktops) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .logoimage {
+    height: 60px;
+  }
+  
+  nav a {
+    font-size: 1em;
+  }
+  
+  .hero-button {
+    font-size: 1.2em;
+    padding: 1em;
+  }
+}
+
